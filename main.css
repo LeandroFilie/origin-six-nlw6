@@ -528,13 +528,25 @@ footer .social a:hover{
 }
 
 /*====  RESPONSIVIDADE ============================ */
-@media(min-width: 1200px){
+@media(min-width: 650px){
+  .image{
+    transform: scale(0.8);
+  }
+  #services .cards{
+    grid-template-columns: 1fr 1fr;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+
+@media(min-width: 850px){
   main {
     margin-top: (--header-height);
   }
 
   .container {
-    max-width: 1120px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -641,5 +653,17 @@ footer .social a:hover{
   :root{
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
+  }
+}
+
+@media(min-width: 1000px){
+  .container {
+    max-width: 950px;
+  }
+}
+
+@media(min-width: 1200px){
+  .container {
+    max-width: 1120px;
   }
 }
