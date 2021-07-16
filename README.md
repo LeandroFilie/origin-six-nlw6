@@ -7,7 +7,7 @@
 </p>
 
 ## O Projeto
-OriginSix é um formato de Landing Page totalmente customizavel e responsiva, ficando com boa visualização tanto em desktops quanto em smartphones. Boa para ser usada em diversos tipos de micro, pequena e média empresas.
+OriginSix é um formato de Landing Page totalmente customizavel e responsiva para desktops, tablets e smartphones. Boa para ser usada em diversos tipos de micros, pequenas e médias empresas.
 Foi um projeto desenvolvido durante a Next Level Week #6, organizado pela [Rocketseat](https://rocketseat.com.br/).
 
 
