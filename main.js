@@ -1,25 +1,24 @@
-// MENU
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
-for (const element of toggle) {
-  element.addEventListener('click', function () {
+toggle.forEach(element => {
+  element.addEventListener('click', () => {
     nav.classList.toggle('show')
   })
-}
+})
 
 const links = document.querySelectorAll('nav ul li a')
 
-for (const link of links) {
-  link.addEventListener('click', function () {
+links.forEach(link => {
+  link.addEventListener('click', () => {
     nav.classList.remove('show')
   })
-}
-
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight
+})
 
 function changeHeaderWhenScroll() {
+  const header = document.querySelector('#header')
+  const navHeight = header.offsetHeight
+
   if (window.scrollY >= navHeight) {
     header.classList.add('scroll')
   } else {
@@ -27,7 +26,6 @@ function changeHeaderWhenScroll() {
   }
 }
 
-// CARROSSEL 
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   pagination: {
@@ -43,7 +41,6 @@ const swiper = new Swiper('.swiper', {
   }
 })
 
-// SCROLL DIFERENTE
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '30px',
@@ -62,9 +59,9 @@ scrollReveal.reveal(
   { interval: 100 }
 )
 
-const backToTopButton = document.querySelector('.back-to-top')
-
 function backToTop() {
+  const backToTopButton = document.querySelector('.back-to-top')
+
   if (window.scrollY >= 560) {
     backToTopButton.classList.add('show')
   } else {
@@ -72,12 +69,11 @@ function backToTop() {
   }
 }
 
-// MENU ATIVO
-const sections = document.querySelectorAll('main section[id]')
 function activateMenuAtCurrentSection(){
+  const sections = document.querySelectorAll('main section[id]')
   const checkpoint = window.pageYOffset + (window.innerHeight/8) * 4
 
-  for(const section of sections){
+  sections.forEach(section => {
     const sectionTop = section.offsetTop
     const sectionHeight = section.offsetHeight
     const sectionId = section.getAttribute('id')
@@ -86,20 +82,14 @@ function activateMenuAtCurrentSection(){
     const checkpointEnd = checkpoint <= sectionTop + sectionHeight
 
     if(checkpointStart && checkpointEnd){
-      document
-      .querySelector(`nav ul li a[href*=${sectionId}]`)
-      .classList.add('active')
+      document.querySelector(`nav ul li a[href*=${sectionId}]`).classList.add('active')
     } 
     else{
-      document
-      .querySelector(`nav ul li a[href*=${sectionId}]`)
-      .classList.remove('active')
+      document.querySelector(`nav ul li a[href*=${sectionId}]`).classList.remove('active')
     }
-
-  }
+  })
 }
 
-// EVENTO SCROLL
 window.addEventListener('scroll', function () {
   changeHeaderWhenScroll()
   backToTop()

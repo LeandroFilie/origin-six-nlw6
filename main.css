@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
 
-/*====  RESET ============================ */
 * {
   margin: 0;
   padding: 0;
@@ -21,13 +20,10 @@ img {
   height: auto;
 }
 
-/*====  VARIABLES ============================ */
 :root {
   --header-height: 4.5rem;
 
-  /* colors */
   --hue: 159;
-  /* HSL color mode */
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
@@ -43,7 +39,6 @@ img {
   --body-font: 'DM Sans', sans-serif
 }
 
-/*===  BASE ============================ */
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -96,7 +91,6 @@ body {
   );
 }
 
-/*====  LAYOUT ============================ */
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -144,8 +138,6 @@ body {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 }
 
-
-/*====  LOGO ============================ */
 .logo {
   font: 700 1.31rem var(--title-font);
   color: var(--title-color);
@@ -159,7 +151,6 @@ body {
   color: var(--body-color);
 }
 
-/*====  NAVIGATION ============================ */
 nav {
   height: var(--header-height);
   display: flex;
@@ -211,7 +202,6 @@ nav .menu ul {
   display: none;
 }
 
-/* Mostrar menu */
 nav.show .menu {
   opacity: 1;
   visibility: visible;
@@ -237,7 +227,6 @@ nav.show ul.grid {
   gap: 4rem;
 }
 
-/* toggle menu */
 .toggle {
   color: var(--base-color);
   font-size: 1.5rem;
@@ -261,7 +250,6 @@ nav.show div.icon-close {
   top: 1.5rem;
 }
 
-/*====  HOME ============================ */
 #home {
   overflow: hidden;
 }
@@ -309,7 +297,6 @@ nav.show div.icon-close {
   margin-bottom: 2rem;
 }
 
-/*====  ABOUT ============================ */
 #about {
   background: white;
 }
@@ -347,7 +334,6 @@ nav.show div.icon-close {
   margin-right: 1.5rem;
 }
 
-/*====  SERVICES ============================ */
 .cards.grid {
   gap: 1.5rem;
 }
@@ -372,7 +358,6 @@ nav.show div.icon-close {
   margin-bottom: 0.75rem;
 }
 
-/*====  TESTIMONIALS ============================ */
 #testimonials {
   background: white;
 }
@@ -436,7 +421,6 @@ nav.show div.icon-close {
   background: var(--base-color);
 }
 
-/*====  CONTACT ============================ */
 #contact .grid{
   gap: 4rem;
 }
@@ -464,7 +448,6 @@ nav.show div.icon-close {
   color: var(--base-color);
 }
 
-/*====  FOOTER ============================ */
 footer{
   background: var(--base-color);
 }
@@ -502,7 +485,6 @@ footer .social a:hover{
   transform: translateY(-8px)
 }
 
-/*====  Back-to-top ============================ */
 .back-to-top{
   background: var(--base-color);
   color: var(--text-color-light);
@@ -528,7 +510,6 @@ footer .social a:hover{
   transform: translateY(0%);
 }
 
-/*====  RESPONSIVIDADE ============================ */
 @media(min-width: 650px){
   .image{
     transform: scale(0.8);
