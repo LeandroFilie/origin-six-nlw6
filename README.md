@@ -49,7 +49,7 @@ $ git clone https://github.com/LeandroFilie/OriginSix-NLW6.git
 # Acesse a pasta do projeto no seu terminal/cmd
 $ cd OriginSix-NLW6
 ```
-Para acesso de forma online, [clique aqui](beauty-salon-nlw6.vercel.app/)
+Para acesso de forma online, [clique aqui](https://beauty-salon-nlw6.vercel.app/)
 
 ---
 
