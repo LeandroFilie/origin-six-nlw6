@@ -3,7 +3,8 @@
 <p align="center">
   <a href="#o-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#desktop-behavior">Behavior</a>
+  <a href="#desktop-behavior">Behavior</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#executando-o-projeto">Behavior</a>
 </p>
 
 ## O Projeto
@@ -38,6 +39,17 @@ Utilitários
 <p align="center">
   <img src='.github/mobile-gif.gif' height="700px">
 </p>
+
+## Executando o projeto
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/LeandroFilie/OriginSix-NLW6.git
+
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd OriginSix-NLW6
+```
+Para acesso de forma online, acesse: [to-do-list-leandrofilie.vercel.app/](https://to-do-list-leandrofilie.vercel.app)
 
 ---
 
